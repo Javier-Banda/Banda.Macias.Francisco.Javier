@@ -1,0 +1,50 @@
+\usepackage{graphicx}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{mathrsfs}
+\usepackage{cancel}
+
+\begin{document}
+\begin{center}
+\textbf{REPORTE DE PRACTICA 1}\\
+CIRCUITOS DE RECTIFICACION NO CONTROLADOS
+\end{center}
+
+\begin{center}
+Banda Macías Francisco Javier\\
+12-sep-2019\\
+Universidad Politecnica de La Zona Metropolitana de Guadalajara
+\end{center}
+
+\section{Objetivo}
+Analizar y comprender las ondas que se ejercen con los distintos tipos de circuitos y componentes.
+
+\section{Desarrollo}
+Para elaborar está práctica fue necesario descargar el software llamado OrCAD el cual dicho software se necesito para así poder simular como se representaría las señales con distintos tipos de componentes ya sea diodos, rectificadores, resistencias, entre otros aspectos
+Después de haberlo instalado se hace la simulación de cada esquematico que se representa en el manual otorgado por el profesor, una vez teniendo los circuitos con sus respectivos componentes, sus respectivas fuentes y sus configuraciones necesarias como viene exactamente en el manual se da el paso a colocar las respectivas puntillas dependiendo de lo que te esté pudiendo el manual por ejemplo unas se ponen para marcar la señal de  los diodos otras para marcar resistencias entre otros componentes solicitados esto es con el fin de observar mediante cálculos el tipo de onda que se forma al otorgarle un cierto voltaje a los circuitos armados esto se compila para ver si como es su señal si es pico alto o bajo.
+Por ejemplo:
+\subsection{Rectificador de media onda con carga inductiva.}
+En esta la tension de salida no se nula hasta que no lo hace la corriente de carga, lo que significa que el diodo rectificador permanece polarizado en directo incluso durante una porcion del semiperiodo negativo de la tension de entrada.\\
+\newpage Esto se debe a que la inductancia de salida se opone a variaciones rudas de corriente y asi crea una sobretension necesaria para mantener al diodo en sincronia hasta que la corriente se convierta en nula está puede ser un buen ejemplo de una rectificación no controlada.
+\subsection{Tension en el diodo rectificador.}
+Es necesario poner en PSPICE las características que tiene cada una de las ondas que vienen en el manual de practica para así poder obtener la señal que se espera tener ya que cuenta con una serie de procedimientos para la configuración de esta señal.
+
+\subsection{Rectificador monofasico en puente.}
+El rectificador monofasico o puente de diodos, esta consta de un filtro constituido por los elementos Cf y Lf , destinado a atenuar el rizado de la tension de la  salida. En la etapa alterna se han añadido los elementos Rr y Lr para tener en cuenta la resistencia y la inductividad de la señal observadas desde el punto de rectificacion.\\
+Para poder observar el comportamiento y estudiarlo es necesario empeorar el factor de potencia ya que sus ondas en la señal cambia asiendo distintas formas.
+\subsubsection{Distorcion de la corriente de entrada.}
+Como ya observamos el funcionamiento de la corriente y la tencion de un rectificador podremos hacer el uso de dicho software para así mismo obtener el factor de potencia del rectificador utilizando los resultados del análisis de Fourier una herramienta que nos da PSpice en tabla en el fichero de salida.
+\subsection{Rectificador monofasico duplicador de tension.}
+En este tipo de rectificador nos  permite obtener una salida de tension parecida al circuito de \textbf{Distorcion de la corriente de entrada}. Obteniendo asi señales elevadas en la etapa continua sin necesidad de utilizar transformador que eleve la tension de entrada del rectificador.
+
+\subsection{Rectificadores monofasicos en lineas trifasicas.}
+Diseñando un circuito con un  conjunto de 3 receptores monofasicos de igual potencia conectados entre cada una de las fases y el neutro de la instalacion conectamos una fuente como indicador de la coneccion al circuito original es por eso que debes observar bien el símbolo para que puedas utilizar el mismo al que se basa el manual.
+\subsection{Rectificador Trifasico.}
+Al igual que los demás receptores electricos, los rectificadores trifasicos  son utilizados cuando la potencia de la señal es consumida de manera elevada, ya que en estos casos el uso de rectificadores monofasicos provocan  desequilibrios importantes en el consumo de las fases de dicha señal.\\
+Para este circuito se utilizarán los siguientes componentes  (\textbf{Resistencia,Capacitor y Bobina}) estos componentes van configurados a 1 mF para así de esta manera puedas observar de manera correcta dicha señal.
+\caption{•de las inductancias de red sobre la conmutacion de corriente}
+En este circuito en ausencia de inductancia de red, cuando la tension de entrada fuese positiva al diodo 1 se polariza en directo y funcionaria de manera adecuada. De lo contrario el diodo 2 estaria polarizado a la inversa y se estaría  bloqueando.\\
+En lo que la tension de salida se refiere, la forma de onda resultante seria casi nula durante la conduccion del diodo 2.\\
+Durante todo ese periodo de salida permanece en corto o sin conducción por el diodo 2, produciéndose la perdida de tension.
+CONCLUSION
+Gracias a este proyecto donde pudimos aprender un nuevo software que nos servirá para obtener distintos elementos para las demás prácticas pudimos observar mediante los resultados el funcionamiento de los receptores y de qué componentes o parámetros se necesitan para así estar en lo correcto así mismo aprendimos el funcionamiento de a más detalle de los diferentes tipos de componentes así como a observar que el comportamiento de algunos componentes que se utilizaron mediante las ondas es más entendible su funcionamiento
