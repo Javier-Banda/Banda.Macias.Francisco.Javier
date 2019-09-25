@@ -1,0 +1,39 @@
+\documentclass[11pt,a4paper]{article}
+\usepackage{graphicx}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{mathrsfs}
+\usepackage{cancel}
+
+\begin{document}
+\begin{center}
+\textbf{TAREA 2}\\
+\textbf{EV 1-6 Explicar la operacion de los circuitos de activacion con tiristoresen convertidores CA-CD Y CA-CA}
+\end{center}
+
+\begin{center}
+Banda Macías Francisco Javier\\
+\textbf{23-sep-2019}\\
+\textbf{Universidad Politecnica de La Zona Metropolitana de Guadalajara}
+\end{center}
+
+\section{DESAROLLO}
+Primero para poder comprender cómo es que un tiristor forma su señal senoidal o trifásica es necesario saber cómo es que este funciona.\\
+\section{Tiristor}
+Un tiristor es uno de los tipos más importantes de los dispositivos semiconductores de potencia. Los tiristores se utilizan en forma extensa en los circuitos electrónicos de potencia. Se operan como conmutadores estables, pasando de un estado no conductor a un estado conductor. Para muchas aplicaciones se puede suponer que los Tiristores son interruptores o conmutadores ideales, aunque los tiristores prácticos exhiben ciertas características y limitaciones.
+Un Tiristor es un dispositivo semiconductor de cuatro capas de estructura pnpn con tres uniones pn tiene tres terminales: ánodo cátodo y compuerta. Los tiristores se fabrican por difusión.
+Cuando el voltaje del ánodo se hace positivo con respecto al cátodo, las uniones J1 y J3 tienen polarización directa o positiva. La unión J2 tiene polarización inversa, y solo fluirá una pequeña corriente de fuga del ánodo al cátodo. Se dice entonces que el tiristor está en condición de bloqueo directo o en estado desactivado llamándose a la corriente fuga corriente de estado inactivo ID. Si el voltaje ánodo a cátodo VAK se incrementa a un valor lo suficientemente grande la unión J2 polarizada inversamente entrará en ruptura. Esto se conoce como ruptura por avalancha y el voltaje correspondiente se llama voltaje de ruptura directa VBO. Dado que las uniones J1 y J3 ya tienen polarización directa, habrá un movimiento libre de portadores a través de las tres uniones que provocará una gran corriente directa del ánodo. Se dice entonces que el dispositivo está en estado de conducción o activado.\\
+\section{ACTIVACION DEL TIRISTOR}
+Un tiristor se activa incrementando la corriente del ánodo. Esto se puede llevar a cabo  mediante una de las siguientes formas.
+TERMICA.   Si la temperatura de un tiristor es alta habrá un aumento en el número de pares electrón-hueco, lo que aumentará las corrientes de fuga. Este aumento en las corrientes hará que 1 y 2  aumenten. Debido a la acción regenerativa (   1+   2) puede tender a la unidad y el tiristor pudiera activarse. Este tipo de activación puede causar una fuga térmica que por lo general se evita.
+LUZ.   Si se permite que la luz llegue a las uniones de un tiristor, aumentaran los pares electrón-hueco pudiéndose activar el  tiristor. La activación de tiristores por luz se logra permitiendo que esta llegue a los discos de silicio.
+ALTO VOLTAJE.  Si el voltaje directo ánodo  a cátodo es mayor que el voltaje de ruptura directo VBO, fluirá una corriente de fuga suficiente para iniciar una activación regenerativa. Este tipo de activación puede resultar destructiva por lo que se debe evitar.
+dv/dt.     Si la velocidad de elevación del voltaje ánodo-cátodo es alta, la corriente de carga de las uniones capacitivas puede ser suficiente para activar el tiristor. Un valor alto de corriente de carga puede dañar el tiristor por lo que el dispositivo debe protegerse contra dv/dt alto. Los fabricantes especifican el dv/dt máximo permisible de los tiristores.
+\section{CORRIENTE DE COMPUERTA.}
+ Si un tiristor está polarizado en directa, la inyección de una corriente de compuerta al aplicar un voltaje positivo de compuerta entre la compuerta y las terminales del cátodo activará al tiristor. Conforme aumenta la corriente de compuerta, se reduce el voltaje de bloqueo directo
+A esto se le agrega que en las señales senoidales la diferencia es que uno tiene una caída en la señal asiendo un circuito cerrado y en el otro tu antes la señal abriendo el circuito en el momento deseado así es cunado empieza hacer la onda de la señal.\\
+
+\section{Bibliografia}
+http://www.profesormolina.com.ar/electronica/componentes/tirist/tiris.htm
+http://electronika2.tripod.com/info-files/tiristor.htm
+\end{document}
