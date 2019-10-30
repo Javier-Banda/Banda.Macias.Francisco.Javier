@@ -1,0 +1,42 @@
+\documentclass[11pt,a4paper]{article}
+\usepackage{graphicx}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{mathrsfs}
+\usepackage{cancel}
+
+\begin{document}
+\begin{center}
+\textbf{TAREA7}\\ 
+EV 2-4 Calcular los parametros de circuitos de transistores de potencia
+\end{center}
+
+\begin{center}
+Banda Macias Francisco Javier\\
+29-OCT-2019\\
+Universidad Politecnica de La Zona Metropolitana de Guadalajara
+\end{center}
+
+
+\section{FUNCIONAMIENTO}
+El funcionamiento y utilización de los transistores de potencia es idéntico al de los transistores normales, teniendo como características especiales las altas tensiones e intensidades que tienen que soportar y, por tanto, las altas potencias a disipar.
+\section{ tipos de transistores de potencia}
+       •Bipolar.\\
+•	Unipolar o FET (Transistor de Efecto de Campo).\\
+•	IGBT\\
+Usando un transistor como interruptor (switch)Cuando un transistor es usado como interruptor debe estar o “apagado” (OFF) o totalmente “encendido” (conduciendo: ON).
+En este último estado el voltaje entre colector-emisor VCE es prácticamente cero y se dice que el transistor está saturado porque no puede pasar cualquier corriente más que la de colector Ic, determinada no por el transistor sino por parámetros externos. El dispositivo de salida conmutado por el transistor es usualmente llamado “carga” (load). La potencia desarrollada en un trasistor en conmutación es muy pequeña: 
+En el estado OFF:
+\begin{center}
+potencia = Ic * VCE,
+pero Ic = 0
+\end{center}
+ así la potencia es cero.
+En el estado ON: 
+\begin{center}
+potencia = Ic * VCE, pero VCE = 0 (aprox.)
+\end{center}
+ así la potencia es muy pequeña. 
+Esto quiere decir que el transistor no debería calentarse al usarlo y no necesitas considerar su máximo rango de potencia. Los rangos importantes en circuitos conmutados son la máxima corriente de colector Ic(max) y la mínima ganancia de corriente hFE(min). Los rangos de voltaje pueden ser ignorados al menos que estés usando una fuente de más de 15 V. Hay una tabla que muestra los datos técnicos para los transistores más comunes.
+Para que el transistor pueda funcionar  de tal manera que  pueda funcionar como un switch   debes calcular las resistencias de tu circuito para que pueda  usarse en modo switch
+\end{document}
